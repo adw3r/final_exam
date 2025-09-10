@@ -4,22 +4,15 @@ import './style.scss'
 import Button from "../../components/Button/Button.jsx";
 import {TypeAnimation} from 'react-type-animation';
 
+const sequence = [
+    'Full-stack', 1500, 'Python', 1500, 'Scraping', 1500, 'Automation', 1500
+];
 const TypeComponent = () => {
     return (
         <TypeAnimation
-            sequence={[
-                // Same substring at the start will only be typed out once, initially
-                'Full-stack',
-                1500, // wait 1s before replacing "Mice" with "Hamsters"
-                'Python',
-                1500,
-                'Scraping',
-                1500,
-                'Automation',
-                1500
-            ]}
+            sequence={sequence}
             wrapper="span"
-            speed={50}
+            speed={45}
             style={{display: 'inline-block'}}
             repeat={Infinity}
         />
