@@ -1,6 +1,5 @@
-import React, {useEffect, useRef} from 'react';
-import * as THREE from 'three'; // Import Three.js if your effect uses it
-import FOG from 'vanta/src/vanta.fog.js'; // Import the specific Vanta effect
+import Background from "./Background.jsx";
+import React from 'react';
 import './style.scss'
 import Button from "../../components/Button/Button.jsx";
 import {TypeAnimation} from 'react-type-animation';
@@ -26,35 +25,9 @@ const TypeComponent = () => {
         />
     );
 };
-
-const VantaBackground = () => {
-    useEffect(() => {
-        FOG({
-            el: '#vanta',
-            THREE: THREE,
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            highlightColor: 0x309168,
-            midtoneColor: 0x3c268c,
-            lowlightColor: 0x847ec8,
-            baseColor: 0x161A31,
-            blurFactor: 0.43,
-            speed: 1.20,
-            zoom: 0.40,
-            width: '100%',
-            height: '100%'
-        })
-    }, []);
-
-    return <div className="hero__bg" id='vanta'></div>;
-};
-
 export default function Hero() {
     return <section id='hero' className='hero container'>
-        <VantaBackground/>
+        <Background/>
 
         <div className='hero__content container'>
             <hgroup>
