@@ -1,0 +1,24 @@
+.portfolio {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+
+  .portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    .grid__item {
+      position: relative;
+      padding: 1rem;
+      .img-wrap {
+        position: absolute;
+      }
+      &-bigger {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+    }
+  }
+}

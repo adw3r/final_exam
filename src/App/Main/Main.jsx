@@ -10,7 +10,7 @@ export default function Main() {
     return (
         <main>
             <Hero/>
-            {/*<Portfolio/>*/}
+            <Portfolio/>
             {/*<Recent/>*/}
             {/*<Reviews/>*/}
             {/*<Experience/>*/}
