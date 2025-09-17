@@ -1,7 +1,7 @@
 import Background from "./Background.jsx";
 import React from 'react';
 import './style.scss'
-import Button from "../../components/Button/Button.jsx";
+import Button from "../../../components/Button/Button.jsx";
 import {TypeAnimation} from 'react-type-animation';
 
 const sequence = [
