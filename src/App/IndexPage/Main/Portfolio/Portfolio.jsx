@@ -13,16 +13,16 @@ export default function Portfolio() {
                         <h3>I prioritize client collaboration, fostering open communication </h3>
                     </div>
                 </section>
-                {/*<section className="grid__item">*/}
-                {/*    <div className='item__content'>*/}
-                {/*        <h3>I’m very flexible with time zone communications</h3>*/}
-                {/*    </div>*/}
-                {/*</section>*/}
-                {/*<section className="grid__item">*/}
-                {/*    <div className='item__content'>*/}
-                {/*        <h3>My tech stack</h3>*/}
-                {/*    </div>*/}
-                {/*</section>*/}
+                <section className="grid__item mid">
+                    <div className='item__content'>
+                        <h3>I’m very flexible with time zone communications</h3>
+                    </div>
+                </section>
+                <section className="grid__item mid">
+                    <div className='item__content'>
+                        <h3>My tech stack</h3>
+                    </div>
+                </section>
             </div>
             <div className="porfolio__grid">
                 <section className="grid__item">

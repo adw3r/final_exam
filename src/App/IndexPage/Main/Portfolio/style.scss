@@ -1,16 +1,20 @@
 .bigger {
-  grid-column: span 2;
+  grid-column: span 3;
   grid-row: span 2;
 }
+.mid {
+  grid-column: span 3;
+  grid-row: span 1;
+}
 .portfolio {
-  height: 90dvh;
+  min-height: 90dvh;
   display: flex;
   flex-direction: column;
   padding: 3rem 0;
 
   .portfolio__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
 
     .grid__item {
