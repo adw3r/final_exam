@@ -1,6 +1,11 @@
 import earth from './images/earth.png?url'
+import map_image from './images/map.png?url'
 import './style.scss'
-
+const Slider = () => {
+    return (
+        <div className="slider"></div>
+    )
+}
 export default function Portfolio() {
     return (
         <div className='portfolio container'>
@@ -14,13 +19,19 @@ export default function Portfolio() {
                     </div>
                 </section>
                 <section className="grid__item mid">
+                    <div className='img-wrap fill'>
+                        <img src={map_image} alt="Map image"/>
+                    </div>
+
                     <div className='item__content'>
                         <h3>I’m very flexible with time zone communications</h3>
                     </div>
                 </section>
                 <section className="grid__item mid">
                     <div className='item__content'>
+                        <p>I constantly try to improve</p>
                         <h3>My tech stack</h3>
+                        <Slider/>
                     </div>
                 </section>
             </div>
