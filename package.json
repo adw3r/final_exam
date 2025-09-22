@@ -14,8 +14,10 @@
     "@tanstack/router-plugin": "^1.131.44",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-slick": "^0.31.0",
     "react-type-animation": "^3.2.0",
     "sass": "^1.92.1",
+    "slick-carousel": "^1.8.1",
     "three": "^0.180.0",
     "vanta": "^0.5.24"
   },

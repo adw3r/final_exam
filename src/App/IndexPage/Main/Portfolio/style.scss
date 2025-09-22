@@ -1,3 +1,4 @@
+$scroll_time: 220s;
 .bigger {
   grid-column: span 3;
   grid-row: span 2;
@@ -12,6 +13,70 @@
   img {
     object-fit: fill;
   }
+}
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+@keyframes marquee-up {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+@keyframes marquee-down {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
+
+.slider__columns {
+  position: absolute;
+  left: 45%;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  @media (max-width: 1024px) {
+    transform: rotate(15deg);
+    left: 20%;
+  }
+}
+
+.marquee {
+  position: relative;
+  width: 150px;
+  height: 260px;
+}
+
+.marquee__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: marquee-up $scroll_time linear infinite;
+  will-change: transform;
+}
+.marquee__inner.down {
+  animation: marquee-down $scroll_time linear infinite;
+}
+
+.marquee__group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.marquee li {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  background-color: #10132e;
+  height: 55px;
+  color: #E4ECFF;
+  font-weight: 600;
+}
+
+.slider:hover .marquee__inner {
+  animation-play-state: paused;
 }
 
 .portfolio {
@@ -32,6 +97,18 @@
       overflow: hidden;
 
       .item__content {
+        &.with-slider {
+          //gap: 1rem;
+          hgroup {
+            z-index: 1;
+            flex-wrap: nowrap;
+            width: 50%;
+          }
+        }
+        //&-sliding {
+        //  display: flex;
+        //  flex-direction: row;
+        //}
         background: linear-gradient(0deg,#04071D 12%, rgba(255, 255, 255, 0) 35%);
         padding: 2.5rem;
         @media (max-width: 1024px) {
@@ -56,6 +133,51 @@
         }
       }
 
+    }
+  }
+}
+.slider {
+  position: relative;
+  .slider__container {
+    //overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    left: 45%;
+
+    @media (max-width: 1024px) {
+      transform: rotate(15deg);
+      left: 20%;
+    }
+
+    ul {
+      &.left {
+        top: -100px;
+      }
+      &.right {
+        top: -200px;
+      }
+
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+
+      li {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 10px;
+        background-color: #10132e;
+
+        width: 140px;
+        height: 55px;
+
+      }
     }
   }
 }

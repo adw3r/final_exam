@@ -1,11 +1,9 @@
 import earth from './images/earth.png?url'
 import map_image from './images/map.png?url'
 import './style.scss'
-const Slider = () => {
-    return (
-        <div className="slider"></div>
-    )
-}
+import Slider from "./MySlider.jsx";
+import VerticalSwipeToSlide from './VerticalSlider.jsx';
+
 export default function Portfolio() {
     return (
         <div id='portfolio' className='portfolio container'>
@@ -28,9 +26,11 @@ export default function Portfolio() {
                     </div>
                 </section>
                 <section className="grid__item mid">
-                    <div className='item__content'>
-                        <p>I constantly try to improve</p>
-                        <h3>My tech stack</h3>
+                    <div className='item__content with-slider'>
+                        <hgroup>
+                            <p>I constantly try to improve</p>
+                            <h3>My tech stack</h3>
+                        </hgroup>
                         <Slider/>
                     </div>
                 </section>
