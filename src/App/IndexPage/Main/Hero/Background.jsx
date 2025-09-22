@@ -12,9 +12,9 @@ const Background = () => {
             midtoneColor: 0x3c268c,
             lowlightColor: 0x847ec8,
             baseColor: 0x161A31,
-            blurFactor: 0.7,
-            speed: 1.20,
-            zoom: 1,
+            blurFactor: .7,
+            speed: 4,
+            zoom: 2.5,
         })
     }, []);
 
