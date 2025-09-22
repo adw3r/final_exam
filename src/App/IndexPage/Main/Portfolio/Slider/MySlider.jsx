@@ -17,12 +17,9 @@ function renderItems(times = 20) {
     ));
 }
 
-const Slider = ({ speedUp = '14s', speedDown = '16s' }) => {
+const Slider = () => {
     return (
-        <div className={"slider"} style={{
-            ['--marquee-duration-up']: speedUp,
-            ['--marquee-duration-down']: speedDown,
-        }}>
+        <div className={"slider"}>
             <div className={'slider__columns'}>
                 <div className={'marquee left'}>
                     <div className={'marquee__inner'}>
