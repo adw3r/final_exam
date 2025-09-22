@@ -34,7 +34,9 @@ export default function Hero() {
             <p>
                 Hi! I’m Oleksii Naidiuk, a <TypeComponent/> Developer based in Ukraine.
             </p>
-            <Button text='See my work'/>
+            <a href="#portfolio" className='hero__cta'>
+                <Button text='See my work'/>
+            </a>
         </div>
     </section>
 }

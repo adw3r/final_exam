@@ -8,7 +8,7 @@ const Slider = () => {
 }
 export default function Portfolio() {
     return (
-        <div className='portfolio container'>
+        <div id='portfolio' className='portfolio container'>
             <div className='portfolio__grid'>
                 <section className="grid__item bigger">
                     <div className='img-wrap'>

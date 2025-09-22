@@ -4,6 +4,22 @@
   overflow: hidden;
   width: 100vw; /* ensure full-viewport width for the hero block */
 
+  /* smooth-scroll behavior for in-page anchors */
+  scroll-behavior: smooth;
+
+  /* bottom gradient to blend hero into next section */
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 18dvh;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(22,26,49,0) 0%, rgba(0,3,25,0.6) 45%, rgba(0,3,25,1) 100%);
+    z-index: 0;
+  }
+
   .hero__bg {
     position: absolute;
     inset: 0;
