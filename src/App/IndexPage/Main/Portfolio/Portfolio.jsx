@@ -10,20 +10,20 @@ import Background from "@/App/IndexPage/Main/Hero/Background.jsx";
 import FOG from "vanta/src/vanta.fog.js";
 import * as THREE from "three";
 
-function Vanta() {
+function Vanta(props = {
+    el: '#portofilo_vanta',
+    THREE: THREE,
+    highlightColor: 0x309168,
+    midtoneColor: 0x3c268c,
+    lowlightColor: 0x847ec8,
+    baseColor: 0x161A31,
+    blurFactor: 1,
+    speed: 4,
+    zoom: .2,
+}) {
     useEffect(() => {
-        FOG({
-            el: '#portofilo_vanta',
-            THREE: THREE,
-            highlightColor: 0x309168,
-            midtoneColor: 0x3c268c,
-            lowlightColor: 0x847ec8,
-            baseColor: 0x161A31,
-            blurFactor: 1,
-            speed: 4,
-            zoom: .2,
-        })
-    }, []);
+        FOG(props)
+    }, [props]);
     return <div id='portofilo_vanta'></div>;
 }
 
