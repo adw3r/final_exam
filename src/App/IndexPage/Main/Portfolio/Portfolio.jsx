@@ -1,11 +1,34 @@
+import './style.scss'
 import earth_image from './images/earth.png?url'
 import map_image from './images/map.png?url'
 import code_image from './images/code.png?url'
 import skeleton_image from './images/skeleton.png?url'
-import './style.scss'
 import Slider from "./Slider/MySlider.jsx";
+import Button from "@/App/components/Button/Button.jsx";
+import React, {useEffect} from "react";
+import Background from "@/App/IndexPage/Main/Hero/Background.jsx";
+import FOG from "vanta/src/vanta.fog.js";
+import * as THREE from "three";
+
+function Vanta() {
+    useEffect(() => {
+        FOG({
+            el: '#portofilo_vanta',
+            THREE: THREE,
+            highlightColor: 0x309168,
+            midtoneColor: 0x3c268c,
+            lowlightColor: 0x847ec8,
+            baseColor: 0x161A31,
+            blurFactor: 1,
+            speed: 4,
+            zoom: .2,
+        })
+    }, []);
+    return <div id='portofilo_vanta'></div>;
+}
 
 export default function Portfolio() {
+
     return (
         <div id='portfolio' className='portfolio container'>
             <div className='portfolio__grid'>
@@ -47,20 +70,18 @@ export default function Portfolio() {
                         <img src={skeleton_image} alt="Code image"/>
                     </div>
                     <div className='item__content inverted'>
-                        <h4 >
+                        <h4>
                             Tech enthusiast with a passion for development.
                         </h4>
                     </div>
                 </section>
                 <section className="grid__item inverted div2">
-                    <div className='item__content '>
+                    <Vanta/>
+                    <div className='item__content no-bg'>
                         <h4 className={'centered'}>
                             Do you want to start a project together?
                         </h4>
-                        <a href="/contact" className={'btn'}>
-                            Contact me
-                        </a>
-
+                        <Button text={'Contact me'} className={'small center'}/>
                     </div>
                 </section>
                 <section className="grid__item div3">

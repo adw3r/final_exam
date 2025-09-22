@@ -20,7 +20,7 @@ const TypeComponent = () => {
 };
 export default function Hero() {
     return <section id='hero' className='hero container'>
-        <Background/>
+        <Background />
 
         <div className='hero__content container'>
             <hgroup>
