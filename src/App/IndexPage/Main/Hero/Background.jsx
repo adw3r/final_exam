@@ -6,7 +6,7 @@ import './style.scss'
 const Background = () => {
     useEffect(() => {
         FOG({
-            el: '#vanta',
+            el: '#hero_vanta',
             THREE: THREE,
             highlightColor: 0x309168,
             midtoneColor: 0x3c268c,
@@ -18,6 +18,6 @@ const Background = () => {
         })
     }, []);
 
-    return <div className="hero__bg" id='vanta'></div>;
+    return <div className="hero__bg" id='hero_vanta'></div>;
 };
 export default Background;
