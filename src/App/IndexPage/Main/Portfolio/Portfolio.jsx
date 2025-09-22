@@ -6,25 +6,22 @@ import skeleton_image from './images/skeleton.png?url'
 import Slider from "./Slider/MySlider.jsx";
 import Button from "@/App/components/Button/Button.jsx";
 import React, {useEffect} from "react";
-import Background from "@/App/IndexPage/Main/Hero/Background.jsx";
 import FOG from "vanta/src/vanta.fog.js";
 import * as THREE from "three";
 
-function Vanta(props = {
-    el: '#portofilo_vanta',
-    THREE: THREE,
-    highlightColor: 0x309168,
-    midtoneColor: 0x3c268c,
-    lowlightColor: 0x847ec8,
-    baseColor: 0x161A31,
-    blurFactor: 1,
-    speed: 4,
-    zoom: .2,
-}) {
+function Vanta({selector, id}) {
     useEffect(() => {
-        FOG(props)
-    }, [props]);
-    return <div id='portofilo_vanta'></div>;
+        FOG({
+            el: selector,
+            THREE: THREE,
+            highlightColor: 0x309168,
+            midtoneColor: 0x3c268c,
+            lowlightColor: 0x847ec8,
+            baseColor: 0x161A31,
+            blurFactor: 1,
+            speed: 4, zoom: .2})
+    }, [selector]);
+    return <div id={id}></div>;
 }
 
 export default function Portfolio() {
@@ -76,7 +73,7 @@ export default function Portfolio() {
                     </div>
                 </section>
                 <section className="grid__item inverted div2">
-                    <Vanta/>
+                    <Vanta id='profile_vanta' selector='#profile_vanta' />
                     <div className='item__content no-bg'>
                         <h4 className={'centered'}>
                             Do you want to start a project together?
