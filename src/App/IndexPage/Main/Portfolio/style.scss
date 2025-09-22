@@ -133,7 +133,7 @@ hgroup {
     &:nth-child(1) {
       top: 30px;
       @media (max-width: 768px) {
-        top: 0px;
+        top: 0;
       }
 
       right: -10px;
@@ -142,27 +142,39 @@ hgroup {
     &:nth-child(2) {
       top: -20px;
       @media (max-width: 768px) {
-        top: -0px;
+        top: 0;
       }
     }
 
     &:nth-child(3) {
       top: 20px;
       @media (max-width: 768px) {
-        top: 0px;
+        top: 0;
       }
       left: -10px;
     }
   }
 }
-.div1 { grid-area: 1 / 1 / 2 / 3; }
+h4 {
+  font-size: 1.35rem;
+  &.centered {
+    text-align: center;
+  }
+}
+.div1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
 .div2 { grid-area: 2 / 1 / 3 / 3; }
 .div3 { grid-area: 1 / 3 / 3 / 6; }
 .img-wrap.down-scaled {
   scale: 0.7;
-  top: -40px;
+  top: -20px;
   right: -120px;
   position: relative;
+  &.right-left-corner {
+    bottom: -40px;
+    top: unset;
+  }
 }
 .div3 hgroup {
   width: 311px;
