@@ -1,9 +1,9 @@
 import earth_image from "./earth.png";
 import map_image from "./map.png";
-import Slider from "./Slider/MySlider.jsx";
+import Slider from "./Slider/MySlider";
 import React from "react";
 
-const FirstPart = () => <div className='portfolio__grid'>
+const FirstPart: React.FC = () => <div className='portfolio__grid'>
     <section className="grid__item first">
         <div className='img-wrap'>
             <img src={earth_image} alt="Portifolio image"/>

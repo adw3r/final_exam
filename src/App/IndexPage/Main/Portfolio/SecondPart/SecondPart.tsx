@@ -1,13 +1,13 @@
 import skeleton_image from "./skeleton.png";
-import Button from "@/App/components/Button/Button.jsx";
+import Button from "@/App/components/Button/Button";
 import code_image from "./code.png";
 import React, {useEffect} from "react";
 import FOG from "vanta/src/vanta.fog.js";
 import * as THREE from "three";
 
+type VantaProps = { selector: string, id: string }
 
-
-function Vanta({selector, id}) {
+function Vanta({selector, id}: VantaProps) {
     useEffect(() => {
         FOG({
             el: selector,
@@ -23,9 +23,7 @@ function Vanta({selector, id}) {
     return <div id={id}></div>;
 }
 
-
-
-const SecondPart = () => {
+const SecondPart: React.FC = () => {
     return <div className="portfolio__grid less-higher">
         <section className="grid__item div1">
             <div className='img-wrap down-scaled right-left-corner'>

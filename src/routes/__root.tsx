@@ -5,10 +5,11 @@ export const Route = createRootRoute({
   component: RootComponent,
 })
 
-function RootComponent() {
+function RootComponent(): React.JSX.Element {
   return (
     <React.Fragment>
       <Outlet />
     </React.Fragment>
   )
 }
+

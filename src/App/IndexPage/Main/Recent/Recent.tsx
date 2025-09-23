@@ -1,6 +1,6 @@
-import Card from "./Card.jsx";
-import card_1_image from '/public/Card.png?url'
-import card_2_image from '/public/Card (1).png?url'
+import Card from "./Card";
+import card_1_image from '/Card.png'
+import card_2_image from '/Card (1).png'
 
 
 export default function Recent() {

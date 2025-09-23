@@ -1,4 +1,5 @@
-const Card = ({title, body, url, img, icons}) => <div className="card ">
+type CardProps = { title: string, body: string, url: string, img: string, icons: string[] }
+const Card = ({title, body, url, img, icons}: CardProps) => <div className="card ">
     <div className="img-wrap">
         <img src={img} alt="Card image" />
     </div>

@@ -1,13 +1,13 @@
-import Background from "./Background.jsx";
+import Background from "./Background";
 import React from 'react';
 import './style.scss'
-import Button from "../../../components/Button/Button.jsx";
+import Button from "@/App/components/Button/Button";
 import {TypeAnimation} from 'react-type-animation';
 
-const sequence = [
+const sequence: (string | number)[] = [
     'Full-stack', 1500, 'Python', 1500, 'Scraping', 1500, 'Automation', 1500
 ];
-const TypeComponent = () => {
+const TypeComponent: React.FC = () => {
     return (
         <TypeAnimation
             sequence={sequence}
@@ -18,7 +18,7 @@ const TypeComponent = () => {
         />
     );
 };
-export default function Hero() {
+export default function Hero(): React.JSX.Element {
     return <section id='hero' className='hero container'>
         <Background />
 

@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
-import * as THREE from 'three'; // Import Three.js if your effect uses it
-import FOG from 'vanta/src/vanta.fog.js'; // Import the specific Vanta effect
+import * as THREE from 'three';
+import FOG from 'vanta/src/vanta.fog.js';
 import './style.scss'
 
-const Background = () => {
+const Background: React.FC = () => {
     useEffect(() => {
         FOG({
             el: '#hero_vanta',

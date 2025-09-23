@@ -1,6 +1,7 @@
 import './style.scss'
+import React from 'react'
 
-const TECHNOLOGIES = [
+const TECHNOLOGIES: string[] = [
     'Python',
     'JavaScript',
     'HTML5',
@@ -19,7 +20,7 @@ function renderItems(times = 20) {
     ));
 }
 
-const Slider = () => {
+const Slider: React.FC = () => {
     return (
         <div className={"slider"}>
             <div className={'slider__columns'}>
@@ -48,3 +49,6 @@ const Slider = () => {
     )
 }
 export default Slider
+
+
+
