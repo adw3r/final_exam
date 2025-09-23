@@ -1,6 +1,6 @@
-import skeleton_image from "@/App/IndexPage/Main/Portfolio/SecondPart/skeleton.png";
+import skeleton_image from "./skeleton.png";
 import Button from "@/App/components/Button/Button.jsx";
-import code_image from "@/App/IndexPage/Main/Portfolio/SecondPart/code.png";
+import code_image from "./code.png";
 import React, {useEffect} from "react";
 import FOG from "vanta/src/vanta.fog.js";
 import * as THREE from "three";

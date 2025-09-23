@@ -1,5 +1,5 @@
-import earth_image from "./FirstPart/earth.png";
-import map_image from "./FirstPart/map.png";
+import earth_image from "./earth.png";
+import map_image from "./map.png";
 import Slider from "./Slider/MySlider.jsx";
 import React from "react";
 
