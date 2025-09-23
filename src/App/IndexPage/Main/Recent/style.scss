@@ -1,6 +1,11 @@
 .recent {
+  margin-bottom: 150px;
+  h2 {
+    margin-bottom: 50px;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 40px;
   }
 }

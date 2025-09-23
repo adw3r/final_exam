@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.scss'
 
-export default function Header(): React.JSX.Element {
+export default function Header() {
     return (
         <header>
             <nav>

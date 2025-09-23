@@ -1,17 +1,6 @@
 import {createFileRoute} from '@tanstack/react-router'
-import Footer from "@/App/Footer/Footer.jsx";
-import Header from "@/App/Header/Header.jsx";
+import ContactsPage from "@/App/Contacts";
 
-
-const Contacts = () => {
-    return (
-        <>
-            <Header/>
-            <div>Contacts</div>
-            <Footer/>
-        </>
-    )
-}
 export const Route = createFileRoute('/contacts')({
-    component: Contacts,
+    component: ContactsPage,
 })

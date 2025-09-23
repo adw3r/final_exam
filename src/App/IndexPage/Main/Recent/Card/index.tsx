@@ -1,5 +1,9 @@
+import {ReactElement} from "react";
+import './style.scss'
+
 type CardProps = { title: string, body: string, url: string, img: string, icons: string[] }
-const Card = ({title, body, url, img, icons}: CardProps) => <div className="card ">
+
+const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <div className="card ">
     <div className="img-wrap">
         <img src={img} alt="Card image" />
     </div>
@@ -11,7 +15,7 @@ const Card = ({title, body, url, img, icons}: CardProps) => <div className="card
     </p>
 
     <ul>
-        {icons.length > 0 && icons.map(icon => (
+        {icons.length > 0 && icons.map((icon: string) => (
             <li key={icon} className={'icon'}>
                 {icon}
             </li>

@@ -1,7 +1,7 @@
 import Card from "./Card";
 import card_1_image from '/Card.png'
 import card_2_image from '/Card (1).png'
-
+import './style.scss'
 
 export default function Recent() {
     const items = [
