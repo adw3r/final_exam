@@ -1,6 +1,6 @@
 import earth_image from "./earth.png";
 import map_image from "./map.png";
-import Slider from "./Slider/MySlider";
+import Slider from "./Slider";
 import React from "react";
 
 const FirstPart: React.FC = () => <div className='portfolio__grid'>
