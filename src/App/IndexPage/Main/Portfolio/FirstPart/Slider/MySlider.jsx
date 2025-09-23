@@ -1,11 +1,13 @@
 import './style.scss'
 
 const TECHNOLOGIES = [
-    'ReactJS',
     'Python',
     'JavaScript',
+    'HTML5',
+    'CSS3',
+    'ReactJS',
+    'HTMX',
     'Docker',
-    'Playwright',
 ];
 
 function renderItems(times = 20) {
