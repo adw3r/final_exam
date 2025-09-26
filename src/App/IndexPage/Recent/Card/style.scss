@@ -22,9 +22,9 @@
       .title {
         margin-bottom: 16px;
       }
-      .body {
-        margin-bottom: 24px;
-      }
+      //.body {
+      //}
+      margin-bottom: 50px;
     }
   }
 }
@@ -40,6 +40,22 @@
     img {
       border-radius: 10px;
       transform: rotate(5deg);
+    }
+  }
+}
+.content__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .icons {
+    display: flex;
+    gap: 10px;
+    .icon {
+      svg {
+        width: 35px;
+        height: 35px;
+      }
     }
   }
 }

@@ -7,20 +7,30 @@ import copart_image from '/img_2.png'
 
 import './style.scss'
 
+type TIcons = 'docker' | 'htmx' | 'python' | 'typescript' | 'react'
+
+type TItem = {
+    title: string,
+    body: string,
+    url: string,
+    icons: TIcons[],
+    img: string
+}
+
 export default function Recent() {
-    const items = [
+    const items: TItem[] = [
         {
             title: 'Personal budget app',
             body: 'Integration of MonoBank API and Google`s spreadsheets in one app using FastAPI + HTMX stack',
             url: 'https://adw3r.tech/',
-            icons: ['docker', 'htmx'],
+            icons: ['python', 'docker', 'htmx', 'typescript', 'react'],
             img: mono_automation_image
         },
         {
             title: 'Free Proxy scraper',
             body: 'A high-performance, asynchronous proxy scraper and validator that discovers free proxies from GitHub repositories and validates their functionality.',
             url: 'https://github.com/adw3r/proxy_parser',
-            icons: ['docker', 'htmx'],
+            icons: ['python'],
             img: proxy_parser_image
         },
         {

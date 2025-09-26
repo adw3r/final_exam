@@ -29,14 +29,11 @@ const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <artic
             </p>
         </div>
         <div className="content__items">
-            <ul>
+            <ul className={'icons'}>
                 {icons.length > 0 && icons.map((icon: string) => (
                     <li key={icon} className={'icon'}>
-                        <svg>
-
-                            <svg className="icon">
-                                <use xlinkHref={icon_sprite+"#" + icon}></use>
-                            </svg>
+                        <svg className="icon">
+                            <use href={`${icon_sprite}#${icon}`}></use>
                         </svg>
                     </li>
                 ))}
