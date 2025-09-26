@@ -25,6 +25,10 @@
       //.body {
       //}
       margin-bottom: 50px;
+      @media (max-width: 900px) {
+        margin-bottom: 35px;
+
+      }
     }
   }
 }
@@ -62,7 +66,7 @@
 }
 .check-out {
   color: #CBACF9;
-  &:hover {
+  &:hover, &:focus, &:active {
     scale: 1.1;
     cursor: pointer;
   }
@@ -73,5 +77,6 @@
   letter-spacing: -0.03rem;
   span {
     margin-right: 8px;
+    font-size: 1rem;
   }
 }
