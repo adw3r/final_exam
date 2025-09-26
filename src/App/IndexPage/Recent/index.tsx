@@ -4,6 +4,8 @@ import proxy_parser_image from '/img_1.png'
 import rpi_sms_image from '/img_3.png'
 import copart_image from '/img_2.png'
 
+
+
 import './style.scss'
 
 export default function Recent() {
@@ -42,7 +44,9 @@ export default function Recent() {
         <h2>A small selection of <span className='pink'>recent projects</span></h2>
         <div className="grid">
             {
-                items.length > 0 && items.map((item) => <Card {...item} />)
+                items.length > 0 && items.map((item) =>
+                    <Card {...item} />
+                )
             }
         </div>
     </section>

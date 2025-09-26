@@ -10,7 +10,13 @@ interface CardProps {
     img: string,
     icons: string[]
 }
-
+const iconsMap = {
+    'docker': '/icons/docker.svg',
+    'react': '/icons/react.svg',
+    'python': '/icons/python.svg',
+    'ts': '/icons/ts.svg',
+    'htmx': '/icons/htmx.svg',
+}
 
 const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <article className="card">
     <div className="card__img" style={{backgroundImage: `url(${card_bg})`}}>
