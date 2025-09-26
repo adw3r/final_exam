@@ -52,7 +52,8 @@
     display: flex;
     gap: 10px;
     .icon {
-      svg {
+      img {
+        object-fit: contain;
         width: 35px;
         height: 35px;
       }

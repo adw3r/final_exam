@@ -30,13 +30,17 @@ const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <artic
         </div>
         <div className="content__items">
             <ul className={'icons'}>
-                {icons.length > 0 && icons.map((icon: string) => (
-                    <li key={icon} className={'icon'}>
-                        <svg className="icon">
-                            <use href={`${icon_sprite}#${icon}`}></use>
-                        </svg>
-                    </li>
-                ))}
+                {icons.length > 0 && icons.map((icon: string) => {
+                    let href = `/icons/${icon}.svg`;
+                    return (
+                        <li key={icon} className={'icon'}>
+                            <img src={href} alt=""/>
+                            {/*<svg className="icon">*/}
+                            {/*    <use xlinkHref={href}></use>*/}
+                            {/*</svg>*/}
+                        </li>
+                    );
+                })}
             </ul>
             <a href={url}>Check out</a>
         </div>
