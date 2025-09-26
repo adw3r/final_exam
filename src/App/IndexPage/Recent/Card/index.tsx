@@ -2,6 +2,8 @@ import {ReactElement} from "react";
 import './style.scss'
 
 import card_bg from './card_bg.png'
+// @ts-ignore
+import icon_sprite from "@/assets/sprite.svg"
 
 interface CardProps {
     title: string,
@@ -9,13 +11,6 @@ interface CardProps {
     url: string,
     img: string,
     icons: string[]
-}
-const iconsMap = {
-    'docker': '/icons/docker.svg',
-    'react': '/icons/react.svg',
-    'python': '/icons/python.svg',
-    'ts': '/icons/ts.svg',
-    'htmx': '/icons/htmx.svg',
 }
 
 const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <article className="card">
@@ -37,7 +32,12 @@ const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <artic
             <ul>
                 {icons.length > 0 && icons.map((icon: string) => (
                     <li key={icon} className={'icon'}>
-                        {icon}
+                        <svg>
+
+                            <svg className="icon">
+                                <use xlinkHref={icon_sprite+"#" + icon}></use>
+                            </svg>
+                        </svg>
                     </li>
                 ))}
             </ul>
