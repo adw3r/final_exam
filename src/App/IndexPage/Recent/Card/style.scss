@@ -22,6 +22,7 @@
       .title {
         margin-bottom: 16px;
       }
+
       //.body {
       //}
       margin-bottom: 50px;
@@ -37,16 +38,19 @@
   margin-bottom: 24px;
   border-radius: 23px;
   border: 1px solid rgba(54, 55, 73, 0.43);
+
   .img-wrap {
     max-height: 330px;
     overflow: hidden;
     padding: 50px 50px 0 50px;
+
     img {
       border-radius: 10px;
       transform: rotate(5deg);
     }
   }
 }
+
 .content__items {
   display: flex;
   justify-content: space-between;
@@ -55,6 +59,7 @@
   .icons {
     display: flex;
     gap: 10px;
+
     .icon {
       img {
         object-fit: contain;
@@ -64,17 +69,21 @@
     }
   }
 }
+
 .check-out {
   color: #CBACF9;
+
   &:hover, &:focus, &:active {
     scale: 1.1;
     cursor: pointer;
   }
+
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 1.5rem */
   letter-spacing: -0.03rem;
+
   span {
     margin-right: 8px;
     font-size: 1rem;

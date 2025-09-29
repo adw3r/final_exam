@@ -4,12 +4,21 @@
 }
 
 @keyframes marquee-up {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-50%); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
 }
+
 @keyframes marquee-down {
-  0% { transform: translateY(-50%); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .slider__columns {
@@ -38,6 +47,7 @@
   animation: marquee-up 220s linear infinite;
   will-change: transform;
 }
+
 .marquee__inner.down {
   animation: marquee-down 220s linear infinite;
 }

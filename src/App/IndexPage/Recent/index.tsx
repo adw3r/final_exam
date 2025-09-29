@@ -1,6 +1,7 @@
 import Card from "./Card";
 import './style.scss'
 import {useEffect, useState} from "react";
+import {RECENTS_URL} from "@/config";
 
 type TIcons = 'docker' | 'htmx' | 'python' | 'typescript' | 'react' | 'ubuntu'
 
@@ -16,7 +17,7 @@ export default function Recent() {
     const [items, setItems] = useState<TItem[]>([]);
 
     useEffect(() => {
-        const resp = fetch('/recents.json')
+        const resp = fetch(RECENTS_URL)
         resp.then((res) => res.json())
             .then((data) => setItems(data))
             .catch((err) => console.error("Failed to load projects:", err))

@@ -12,7 +12,7 @@ const TECHNOLOGIES: string[] = [
 ];
 
 function renderItems(times = 20) {
-    const repeated = Array.from({ length: times }).flatMap(() => TECHNOLOGIES);
+    const repeated = Array.from({length: times}).flatMap(() => TECHNOLOGIES);
     return repeated.map((label, index) => (
         <li key={`${label}-${index}`}>
             {label}
@@ -35,7 +35,7 @@ const Slider: React.FC = () => {
                     </div>
                 </div>
                 <div className={'marquee right'}>
-                    <div className={'marquee__inner down'} >
+                    <div className={'marquee__inner down'}>
                         <ul className={'marquee__group'}>
                             {renderItems()}
                         </ul>

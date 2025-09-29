@@ -6,12 +6,12 @@ type TAuthor = {
     image: string
 }
 
-
 export interface IQuote {
     text: string
     author: TAuthor
 }
-export const Quote = ({ text, author }: IQuote) => {
+
+export const Quote = ({text, author}: IQuote) => {
     return (
         <blockquote>
             <p>{text}</p>
@@ -27,4 +27,3 @@ export const Quote = ({ text, author }: IQuote) => {
         </blockquote>
     );
 };
-

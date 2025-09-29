@@ -4,6 +4,7 @@ import QuotesList from "@/App/IndexPage/Reviews/QuotesList";
 interface IServiceLogo {
     image: string
 }
+
 export default function Reviews() {
     const serviceImages = [
         '/logos/cloudinary.png',

@@ -1,6 +1,7 @@
 import './style.scss'
 import {useEffect, useMemo, useRef, useState} from "react";
-import {Quote, IQuote} from "./Quote";
+import {IQuote, Quote} from "./Quote";
+import {QUOTES_URL} from "@/config";
 
 const QuotesList = () => {
     const [quotes, setQuotes] = useState<IQuote[]>([]);
@@ -13,7 +14,7 @@ const QuotesList = () => {
     }, [quotes]);
 
     useEffect(() => {
-        fetch('/quotes.json')
+        fetch(QUOTES_URL)
             .then((res) => res.json())
             .then((data: IQuote[]) => setQuotes(data))
             .catch((err) => console.error("Failed to load quotes:", err));
@@ -55,8 +56,13 @@ const QuotesList = () => {
         };
         rafId = window.requestAnimationFrame(tick);
 
-        const onEnter = () => { isPaused = true; };
-        const onLeave = () => { isPaused = false; lastTs = performance.now(); };
+        const onEnter = () => {
+            isPaused = true;
+        };
+        const onLeave = () => {
+            isPaused = false;
+            lastTs = performance.now();
+        };
         el.addEventListener('mouseenter', onEnter);
         el.addEventListener('mouseleave', onLeave);
         el.addEventListener('pointerenter', onEnter as EventListener);
@@ -68,7 +74,10 @@ const QuotesList = () => {
             dragStartX = e.clientX;
             dragStartScrollLeft = el.scrollLeft;
             el.style.cursor = 'grabbing';
-            try { el.setPointerCapture(e.pointerId); } catch {}
+            try {
+                el.setPointerCapture(e.pointerId);
+            } catch {
+            }
         };
         const onPointerMove = (e: PointerEvent) => {
             if (!isDragging) return;
@@ -88,7 +97,10 @@ const QuotesList = () => {
             el.style.cursor = 'grab';
             isPaused = false;
             lastTs = performance.now();
-            try { el.releasePointerCapture(e.pointerId); } catch {}
+            try {
+                el.releasePointerCapture(e.pointerId);
+            } catch {
+            }
         };
         el.addEventListener('pointerdown', onPointerDown as EventListener);
         window.addEventListener('pointermove', onPointerMove as EventListener);

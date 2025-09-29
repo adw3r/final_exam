@@ -13,12 +13,25 @@
   -webkit-overflow-scrolling: auto;
   scrollbar-width: none; // firefox hide
   scroll-padding: 10px;
+
   li {
     scroll-snap-align: start;
   }
-  &::-webkit-scrollbar { height: 0; width: 0; display: none; }
-  &::-webkit-scrollbar-thumb { background: transparent; }
-  &::-webkit-scrollbar-track { background: transparent; }
+
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
   user-select: none;
   cursor: grab;
 }

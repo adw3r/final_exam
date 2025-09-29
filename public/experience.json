@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Scraping developer",
+    "body": "Built reliable web scrapers and data pipelines, enhancing a React.js platform's interactivity and data freshness.",
+    "image": "/experience_images/img_1.png"
+  },
+  {
+    "title": "Python engineer",
+    "body": "Developed backend services and automation tools in Python, focusing on clean architecture, tests, and performance.",
+    "image": "/experience_images/img_2.png"
+  },
+  {
+    "title": "Lead RPA developer",
+    "body": "Led design and delivery of an internal RPA platform in Python, automating critical workflows and reducing manual effort.",
+    "image": "/experience_images/img_3.png"
+  },
+  {
+    "title": "Full-stack developer",
+    "body": "Delivered full-stack features with React.js, FastApi, and MongoDB, owning planning, implementation, and deployment.",
+    "image": "/experience_images/img_4.png"
+  }
+]

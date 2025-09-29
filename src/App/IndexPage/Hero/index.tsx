@@ -20,7 +20,7 @@ const TypeComponent: React.FC = () => {
 };
 export default function Hero(): React.JSX.Element {
     return <section id='hero' className='hero container'>
-        <Background />
+        <Background/>
 
         <div className='hero__content container'>
             <hgroup>
