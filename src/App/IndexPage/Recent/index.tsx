@@ -26,8 +26,8 @@ export default function Recent() {
         <h2>A small selection of <span className='pink'>recent projects</span></h2>
         <div className="grid">
             {
-                items.length > 0 && items.map((item) =>
-                    <Card {...item} />
+                items.length > 0 && items.map((item, idx) =>
+                    <Card {...item} key={idx}/>
                 )
             }
         </div>

@@ -20,7 +20,6 @@ export const Quote = ({ text, author }: IQuote) => {
                     <img src={author.image} alt={`${author.name}`}/>
                 </div>
                 <div className={'text'}>
-
                     <span className={'name'}>{author.name}</span>
                     <span className={'position'}>{author.position}</span>
                 </div>
