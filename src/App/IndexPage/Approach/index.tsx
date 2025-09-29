@@ -6,9 +6,7 @@ type TFront = {
     name: string,
 }
 type TBack = {
-    name: string,
-    title: string,
-    description: string
+    name: string, title: string, description: string
 }
 
 interface ICard {
@@ -40,38 +38,31 @@ const Card = ({front, back}: ICard) => {
 
 export default function Approach(): React.JSX.Element {
 
-    const cards: ICard[] = [
-        {
-            front: {
-                name: 'Phase 1'
-            },
-            back: {
-                name: 'Phase 1',
-                title: 'Discovery & Success Criteria',
-                description: 'We align on goals, users, and scope. I translate your ideas into clear requirements, propose solutions, and define milestones so we know exactly what success looks like before a line of code is written.'
-            }
-        },
-        {
-            front: {
-                name: 'Phase 2'
-            },
-            back: {
-                name: 'Phase 2',
-                title: 'Development & Progress Update',
-                description: 'Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.'
-            }
-        },
-        {
-            front: {
-                name: 'Phase 3'
-            },
-            back: {
-                name: 'Phase 3',
-                title: 'Launch, Measure, Iterate',
-                description: 'Ship with confidence. I handle deployment and monitoring, gather feedback and metrics, and iterate quickly to optimize performance, UX, and business outcomes.'
-            }
-        },
-    ]
+    const cards: ICard[] = [{
+        front: {
+            name: 'Phase 1'
+        }, back: {
+            name: 'Phase 1',
+            title: 'Discovery & Success Criteria',
+            description: 'We align on goals, users, and scope. I translate your ideas into clear requirements, propose solutions, and define milestones so we know exactly what success looks like before a line of code is written.'
+        }
+    }, {
+        front: {
+            name: 'Phase 2'
+        }, back: {
+            name: 'Phase 2',
+            title: 'Development & Progress Update',
+            description: 'Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way.'
+        }
+    }, {
+        front: {
+            name: 'Phase 3'
+        }, back: {
+            name: 'Phase 3',
+            title: 'Launch, Measure, Iterate',
+            description: 'Ship with confidence. I handle deployment and monitoring, gather feedback and metrics, and iterate quickly to optimize performance, UX, and business outcomes.'
+        }
+    },]
 
     return <section className={'approach container'}>
         <h2>
