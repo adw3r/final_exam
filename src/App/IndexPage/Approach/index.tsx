@@ -47,8 +47,8 @@ export default function Approach(): React.JSX.Element {
             },
             back: {
                 name: 'Phase 1',
-                title: 'Title 1',
-                description: 'Desc 1'
+                title: 'Discovery & Success Criteria',
+                description: 'We align on goals, users, and scope. I translate your ideas into clear requirements, propose solutions, and define milestones so we know exactly what success looks like before a line of code is written.'
             }
         },
         {
@@ -67,8 +67,8 @@ export default function Approach(): React.JSX.Element {
             },
             back: {
                 name: 'Phase 3',
-                title: 'Title 3',
-                description: 'Desc 3'
+                title: 'Launch, Measure, Iterate',
+                description: 'Ship with confidence. I handle deployment and monitoring, gather feedback and metrics, and iterate quickly to optimize performance, UX, and business outcomes.'
             }
         },
     ]
