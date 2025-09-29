@@ -3,6 +3,7 @@ import './style.scss'
 type TAuthor = {
     name: string,
     position: string
+    image: string
 }
 
 
@@ -15,8 +16,14 @@ export const Quote = ({ text, author }: IQuote) => {
         <blockquote>
             <p>{text}</p>
             <cite className={'author'}>
-                <span className={'name'}>{author.name}</span>
-                <span className={'position'}>{author.position}</span>
+                <div className="img-wrap">
+                    <img src={author.image} alt={`${author.name}`}/>
+                </div>
+                <div className={'text'}>
+
+                    <span className={'name'}>{author.name}</span>
+                    <span className={'position'}>{author.position}</span>
+                </div>
             </cite>
         </blockquote>
     );

@@ -2,57 +2,33 @@
   {
     "author": {
       "name": "Sarah Nguyen",
-      "position": "Product Manager at BrightWave"
+      "position": "Product Manager at BrightWave",
+      "image": "/quote_images/female-mock.avif"
     },
     "text": "Dependable, fast, and thoughtful. Our launch timeline was aggressive, yet everything shipped on schedule with quality that exceeded expectations."
   },
   {
     "author": {
       "name": "Miguel Torres",
-      "position": "CTO at HexaLabs"
+      "position": "CTO at HexaLabs",
+      "image": "/quote_images/male-mock.avif"
     },
     "text": "Clean architecture and excellent communication. PRs were small, well-documented, and easy to review. We'll definitely collaborate again."
   },
   {
     "author": {
       "name": "Priya Desai",
-      "position": "Engineering Manager at Orbitly"
+      "position": "Engineering Manager at Orbitly",
+      "image": "/quote_images/older-female-mock.avif"
     },
     "text": "Turned vague requirements into a polished product. Proactive about edge cases and performance, which saved us time in QA."
   },
   {
     "author": {
       "name": "Daniel Kim",
-      "position": "Founder at Trailbyte"
+      "position": "Founder at Trailbyte","image": "/quote_images/older-male-mock.avif"
+
     },
     "text": "Great partner for a startup pace. Rapid iterations, clear estimates, and no surprises. The final UI feels premium."
-  },
-  {
-    "author": {
-      "name": "Emma Johansson",
-      "position": "Marketing Lead at Northshore"
-    },
-    "text": "The new landing pages boosted conversions immediately. Attention to detail on responsiveness and accessibility was top-notch."
-  },
-  {
-    "author": {
-      "name": "Luca Romano",
-      "position": "Head of Design at Arteva"
-    },
-    "text": "Pixel-perfect implementation of our Figma files. Collaborated smoothly with the design team and suggested sensible improvements."
-  },
-  {
-    "author": {
-      "name": "Olivia Park",
-      "position": "COO at Finora"
-    },
-    "text": "Professional and focused. Turnaround on feedback was quick, and the codebase is easy for our team to maintain."
-  },
-  {
-    "author": {
-      "name": "James O'Connor",
-      "position": "Tech Lead at Asterix"
-    },
-    "text": "Handled complex integrations without drama. Strong testing discipline and thoughtful error handling throughout the stack."
   }
 ]
