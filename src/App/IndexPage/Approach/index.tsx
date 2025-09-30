@@ -22,7 +22,7 @@ const Card = ({front, back}: ICard) => {
         }
         return true
     })
-    return <li className={`card ${flipped ? 'is-flipped' : ''}`} onMouseEnter={toggle}>
+    return <li className={`card ${flipped ? 'is-flipped' : ''}`} onMouseEnter={toggle} onClick={toggle}>
         <button type="button"
                 className="card__inner"
                 aria-pressed={flipped}
@@ -66,7 +66,8 @@ export default function Approach(): React.JSX.Element {
             title: 'Launch, Measure, Iterate',
             description: 'Ship with confidence. I handle deployment and monitoring, gather feedback and metrics, and iterate quickly to optimize performance, UX, and business outcomes.'
         }
-    },]
+    }
+    ]
 
     return <section className={'approach container'}>
         <h2>
