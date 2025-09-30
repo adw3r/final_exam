@@ -16,8 +16,15 @@ interface ICard {
 
 const Card = ({front, back}: ICard) => {
     const [flipped, setFlipped] = React.useState(false)
-    const toggle = () => setFlipped(v => !v)
-    return <li className={`card ${flipped ? 'is-flipped' : ''}`}>
+    const [once, setOnce] = React.useState(false)
+    const toggle = () => setFlipped(value => {
+        if (!once) {
+            setOnce(true)
+            return !value;
+        }
+        return true
+    })
+    return <li className={`card ${flipped ? 'is-flipped' : ''}`} onMouseEnter={toggle}>
         <button type="button"
                 className="card__inner"
                 onClick={toggle}
