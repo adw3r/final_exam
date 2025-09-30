@@ -27,7 +27,6 @@ const Card = ({front, back}: ICard) => {
     return <li className={`card ${flipped ? 'is-flipped' : ''}`} onMouseEnter={toggle}>
         <button type="button"
                 className="card__inner"
-                onClick={toggle}
                 aria-pressed={flipped}
                 aria-label={`Toggle ${back.name} details`}>
             <div className="front">
