@@ -16,10 +16,8 @@ interface ICard {
 
 const Card = ({front, back}: ICard) => {
     const [flipped, setFlipped] = React.useState(false)
-    const [once, setOnce] = React.useState(false)
     const toggle = () => setFlipped(value => {
-        if (!once) {
-            setOnce(true)
+        if (!flipped) {
             return !value;
         }
         return true
