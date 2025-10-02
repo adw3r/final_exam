@@ -1,4 +1,3 @@
-import Background from "./Background";
 import React from 'react';
 import './style.scss'
 import Button from "@/App/components/Button/Button";
@@ -21,23 +20,22 @@ const TypeComponent: React.FC = () => {
 };
 export default function Hero(): React.JSX.Element {
     return <section id='hero' className='hero container'>
-        {/*<Background/>*/}
         <div style={{ width: '100%', height: '100dvh', position: 'absolute'}}>
             <LiquidEther
                 colors={[ '#4a11ff', '#e0bde0', '#B19EEF' ]}
                 mouseForce={20}
                 cursorSize={100}
                 isViscous={false}
-                viscous={30}
-                iterationsViscous={64}
-                iterationsPoisson={64}
+                viscous={90}
+                iterationsViscous={32}
+                iterationsPoisson={32}
                 resolution={0.5}
-                isBounce={false}
+                isBounce={true}
                 autoDemo={true}
-                autoSpeed={0.5}
-                autoIntensity={2.2}
-                takeoverDuration={0.25}
-                autoResumeDelay={3000}
+                autoSpeed={0.2}
+                autoIntensity={3}
+                takeoverDuration={0}
+                autoResumeDelay={0}
                 autoRampDuration={0.6}
             />
         </div>
