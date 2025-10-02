@@ -4,6 +4,7 @@ import code_image from "./code.png";
 import React, {useEffect} from "react";
 import FOG from "vanta/src/vanta.fog.js";
 import * as THREE from "three";
+import './style.scss'
 
 type VantaProps = { selector: string, id: string }
 
@@ -17,14 +18,14 @@ function Vanta({selector, id}: VantaProps) {
             lowlightColor: 0x847ec8,
             baseColor: 0x161A31,
             blurFactor: 1,
-            speed: 4, zoom: .2
+            speed: 4, zoom: .2, height: 'auto',
         })
     }, [selector]);
     return <div id={id}></div>;
 }
 
 const SecondPart: React.FC = () => {
-    return <div className="portfolio__grid less-higher">
+    return <div className="portfolio__grid second_part less-higher">
         <section className="grid__item div1">
             <div className='img-wrap down-scaled right-left-corner'>
                 <img src={skeleton_image} alt="Code image"/>

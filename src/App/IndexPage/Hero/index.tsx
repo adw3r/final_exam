@@ -35,7 +35,7 @@ export default function Hero(): React.JSX.Element {
                 Hi! I’m Oleksii Naidiuk, a <TypeComponent/> Developer based in Ukraine.
             </p>
             <a href="#portfolio" className='hero__cta'>
-                <Button text='See my work'/>
+                <Button text='Contact me'/>
             </a>
         </div>
     </section>
