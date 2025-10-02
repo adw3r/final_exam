@@ -8,6 +8,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+    .card__img {
+      .img-wrap {
+        padding: 0;
+        //transition: transform 0.3s ease-in-out;
+        img {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
 
   .card__content {
     display: flex;
