@@ -2,8 +2,6 @@ import {ReactElement} from "react";
 import './style.scss'
 
 import card_bg from './card_bg.png'
-// @ts-ignore
-import icon_sprite from "@/assets/sprite.svg"
 
 interface CardProps {
     title: string,
@@ -13,31 +11,31 @@ interface CardProps {
     icons: string[]
 }
 
-const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <article className="card">
-    <div className="card__img" style={{backgroundImage: `url(${card_bg})`}}>
-        <div className="img-wrap">
-            <img src={img}/>
+const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <article >
+    <a href={url} className={'card'} title={title}>
+        <div className={'card__content'}>
+            <div className="card__img" style={{backgroundImage: `url(${card_bg})`}}>
+                <div className="img-wrap">
+                    <img src={img} alt={title}/>
+                </div>
+            </div>
+            <div className={'content__title'}>
+                <h3 className="title">
+                    {title}
+                </h3>
+                <p className={'body'}>
+                    {body}
+                </p>
+            </div>
         </div>
-    </div>
-    <div className={'card__content'}>
-        <div className={'content__title'}>
-            <h3 className="title">
-                {title}
-            </h3>
-            <p className={'body'}>
-                {body}
-            </p>
-        </div>
-        <div className="content__items">
+        <div className={'bottom'}>
+
             <ul className={'icons'}>
                 {icons.length > 0 && icons.map((icon: string) => {
                     let href = `/icons/${icon}.svg`;
                     return (
                         <li key={icon} className={'icon'}>
                             <img src={href} alt={`${icon}-icon`}/>
-                            {/*<svg className="icon">*/}
-                            {/*    <use xlinkHref={href}></use>*/}
-                            {/*</svg>*/}
                         </li>
                     );
                 })}
@@ -51,6 +49,6 @@ const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <artic
                 </svg>
             </a>
         </div>
-    </div>
+    </a>
 </article>;
 export default Card;

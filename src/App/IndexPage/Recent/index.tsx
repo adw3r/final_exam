@@ -1,4 +1,4 @@
-import Card from "./Card";
+    import Card from "./Card";
 import './style.scss'
 import {useEffect, useState} from "react";
 import {RECENTS_URL} from "@/config";

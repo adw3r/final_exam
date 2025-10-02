@@ -67,6 +67,15 @@ hgroup {
       overflow: hidden;
 
       .item__content {
+        p {
+          color: #C1C2D3;
+          //font-family: 'Inter', sans-serif;
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%; /* 1.05rem */
+        }
+
         position: absolute;
         bottom: 0;
         left: 0;
