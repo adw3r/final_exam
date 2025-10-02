@@ -3,6 +3,7 @@ import React from 'react';
 import './style.scss'
 import Button from "@/App/components/Button/Button";
 import {TypeAnimation} from 'react-type-animation';
+import LiquidEther from "./Bg";
 
 const sequence: (string | number)[] = [
     'Full-stack', 1500, 'Python', 1500, 'Scraping', 1500, 'Automation', 1500
@@ -20,9 +21,27 @@ const TypeComponent: React.FC = () => {
 };
 export default function Hero(): React.JSX.Element {
     return <section id='hero' className='hero container'>
-        <Background/>
-
-        <div className='hero__content container'>
+        {/*<Background/>*/}
+        <div style={{ width: '100%', height: '100dvh', position: 'absolute'}}>
+            <LiquidEther
+                colors={[ '#4a11ff', '#e0bde0', '#B19EEF' ]}
+                mouseForce={20}
+                cursorSize={100}
+                isViscous={false}
+                viscous={30}
+                iterationsViscous={64}
+                iterationsPoisson={64}
+                resolution={0.5}
+                isBounce={false}
+                autoDemo={true}
+                autoSpeed={0.5}
+                autoIntensity={2.2}
+                takeoverDuration={0.25}
+                autoResumeDelay={3000}
+                autoRampDuration={0.6}
+            />
+        </div>
+        <div className='hero__content container' >
             <hgroup>
                 <p>
                     Dynamic Web Magic with Python and JavaScript

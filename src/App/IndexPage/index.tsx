@@ -21,5 +21,6 @@ export default function IndexPage() {
                 <Outro/>
             </main>
         </Layout>
+
     )
 }
