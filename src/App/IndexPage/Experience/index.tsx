@@ -33,7 +33,7 @@ export default function Experience(): React.JSX.Element {
     }, [])
 
 
-    return <section className={'experience container'}>
+    return <section className={'experience container'} id={'experience'}>
         <h2>
             My <span className='pink'>work experience</span>
         </h2>

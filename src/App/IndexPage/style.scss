@@ -1,0 +1,17 @@
+.index-snap {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+/* Each major section snaps to start */
+.index-snap main > section,
+.index-snap main > div[id] {
+  scroll-snap-align: start;
+  /* Offset for fixed header so target isn't hidden */
+  scroll-margin-top: 120px;
+}
+
+/* Ensure the hero fills the viewport for a proper snap */
+section.hero {
+  min-height: 100dvh;
+}

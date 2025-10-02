@@ -19,7 +19,7 @@ export default function Reviews() {
             <img src={image} alt={image.split('/')[2]} className="tech__icon"/>
         </div>;
     };
-    return <section className={'reviews'}>
+    return <section className={'reviews'} id={'reviews'}>
         <h2>
             Kind words from <span className='pink'>satisfied clients</span>
         </h2>

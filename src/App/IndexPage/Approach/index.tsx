@@ -64,7 +64,7 @@ export default function Approach(): React.JSX.Element {
     }
     ]
 
-    return <section className={'approach container'}>
+    return <section className={'approach container'} id={'approach'}>
         <h2>
             My <span className='pink'>approach</span>
         </h2>

@@ -23,7 +23,7 @@ export default function Recent() {
             .catch((err) => console.error("Failed to load projects:", err))
     }, [])
 
-    return <section className={'recent container'}>
+    return <section className={'recent container'} id={'recent'}>
         <h2>A small selection of <span className='pink'>recent projects</span></h2>
         <div className="grid">
             {
