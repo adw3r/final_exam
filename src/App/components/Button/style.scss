@@ -33,10 +33,10 @@
 
   &:hover {
     cursor: pointer;
-    scale: 1.1;
+    scale: 1.2;
     border: 1px solid rgba(105, 113, 162, 0.60);
     background: linear-gradient(90deg, #161A31 3.4%, #06091F 100%);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
     color: #CBACF9;
     text-decoration: none;
     svg {

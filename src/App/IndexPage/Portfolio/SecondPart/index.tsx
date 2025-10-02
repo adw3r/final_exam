@@ -18,7 +18,7 @@ function Vanta({selector, id}: VantaProps) {
             lowlightColor: 0x847ec8,
             baseColor: 0x161A31,
             blurFactor: 1,
-            speed: 4, zoom: .2, height: 'auto',
+            speed: 4, zoom: .2
         })
     }, [selector]);
     return <div id={id}></div>;

@@ -14,6 +14,7 @@
 
   .div2 {
     grid-area: 2 / 1 / 3 / 3;
+
   }
 
   .div3 {
@@ -47,10 +48,15 @@
 }
 .item__content.no-bg {
   background: none;
+  justify-content: space-evenly;
+  padding: 0;
 }
 .item__content.inverted {
   flex-direction: column-reverse;
 }
 .item__content.center {
   justify-content: center;
+}
+#profile_vanta {
+  height: 100%;
 }
