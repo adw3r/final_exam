@@ -3,12 +3,9 @@ import Button from "@/App/components/Button/Button";
 import {SyntheticEvent, useState} from "react";
 
 
-const API_ROUTE = 'localhost:3000';
-const url = `http://${API_ROUTE}/api/sendMessage`;
-
 const sendMessage = async (text: string) => {
 
-    const response = await fetch(url, {
+    const response = await fetch('/api/sendMessage', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
