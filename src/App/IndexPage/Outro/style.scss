@@ -3,8 +3,10 @@
 .outro {
   text-align: center;
   max-width: 750px;
+  position: relative;
+  padding-block: 150px;
 
-  margin-bottom: 150px;
+  //margin-bottom: 150px;
   h2 {
     margin-bottom: 30px;
   }
@@ -19,5 +21,20 @@
     letter-spacing: -0.16px;
 
     margin-bottom: 30px;
+  }
+  //overflow: hidden;
+
+  .bg {
+    position: absolute;
+    left: 0;
+    top: -300px;
+    bottom: 0;
+    right: 0;
+    //transform: translate(50%, 50%);
+    z-index: -1;
+    svg {
+      height: 950px;
+      width: 100%;
+    }
   }
 }
