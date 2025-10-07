@@ -17,7 +17,6 @@ const FirstPart: React.FC = () => <div className='portfolio__grid first_part'>
         <div className='img-wrap fill'>
             <img src={map_image} alt="Map image"/>
         </div>
-
         <div className='item__content inverted light-bg'>
             <div className="floating">
                 <span>USA</span>
