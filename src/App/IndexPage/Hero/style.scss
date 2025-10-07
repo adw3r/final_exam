@@ -8,8 +8,9 @@
   overflow: hidden;
   width: 100vw; /* ensure full-viewport width for the hero block */
   margin-bottom: 150px;
+  margin-top: -2rem;
   @media (max-width: 1024px) {
-    height: 90dvh;
+    height: 100dvh;
     margin-bottom: 0;
   }
 
