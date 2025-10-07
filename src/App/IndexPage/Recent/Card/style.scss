@@ -55,11 +55,19 @@
   border: 1px solid rgba(54, 55, 73, 0.43);
 
   .img-wrap {
+    //height: 300px;
     max-height: 330px;
+    @media (max-width: 1024px) {
+      max-height: 300px;
+      //scale: 1.6;
+    }
     overflow: hidden;
     padding: 50px 50px 0 50px;
 
     img {
+      position: relative;
+      scale: 1.2;
+      top: 10px;
       border-radius: 10px;
       transform: rotate(5deg);
     }
