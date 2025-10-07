@@ -1,0 +1,68 @@
+.contact-form {
+  width: min(100%, 820px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(105, 113, 162, 0.16);
+  background: linear-gradient(103deg, #04071D 16.66%, #0C0E23 81.61%);
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  label {
+    color: #C1C2D3;
+    font-size: 0.95rem;
+    letter-spacing: -0.02rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 16px 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(105, 113, 162, 0.40);
+    background: linear-gradient(90deg, #161A31 3.4%, #06091F 100%);
+    color: #FFF;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #8E93B0;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: rgba(105, 113, 162, 0.60);
+    box-shadow: 0 0 0 3px rgba(105, 113, 162, 0.16);
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 160px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}

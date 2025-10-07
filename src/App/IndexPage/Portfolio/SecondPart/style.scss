@@ -1,5 +1,4 @@
 
-
 .second_part {
   h4 {
 
@@ -47,14 +46,17 @@
   .div3 hgroup {
     width: 311px;
   }
+
   &.less-higher {
     grid-template-rows: repeat(2, 200px);
   }
+
   .btn {
     width: auto;
     padding: 30px 30px;
   }
 }
+
 .item__content.no-bg {
   background: none;
   justify-content: space-evenly;
@@ -64,6 +66,7 @@
 .item__content.center {
   justify-content: center;
 }
+
 #profile_vanta {
   height: 100%;
 }

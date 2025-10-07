@@ -1,5 +1,5 @@
 import './style.scss'
-import { useEffect } from 'react'
+import {useEffect} from 'react'
 import Layout from "@/App/components/Layout";
 import Hero from "./Hero";
 import Portfolio from "./Portfolio";

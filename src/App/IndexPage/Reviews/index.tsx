@@ -25,7 +25,7 @@ export default function Reviews() {
         </h2>
         <QuotesList/>
         <ul className={'technologies container'}>
-            {serviceImages.map((image, idx) => <li key={idx}><ServiceLogo  image={image}/></li>)}
+            {serviceImages.map((image, idx) => <li key={idx}><ServiceLogo image={image}/></li>)}
         </ul>
     </section>
 }

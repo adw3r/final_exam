@@ -1,6 +1,7 @@
 $portfolio_grid_cols: 5;
 $portfolio_grid_rows: 2;
-@media (max-width: 900px) {}
+@media (max-width: 900px) {
+}
 
 hgroup {
   display: flex;
@@ -23,12 +24,11 @@ hgroup {
     grid-template-rows: repeat($portfolio_grid_rows, 1fr);
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3,250px);
+      grid-template-rows: repeat(3, 250px);
     }
     gap: 1rem;
   }
 }
-
 
 
 .grid__item {
@@ -62,6 +62,7 @@ hgroup {
       font-weight: 400;
       line-height: 120%; /* 1.05rem */
       font-family: 'Inter', sans-serif;
+
       &.bigger {
         color: #E4ECFF;
         font-size: 1rem;
@@ -74,6 +75,7 @@ hgroup {
     }
   }
 }
+
 .item__content.inverted {
   flex-direction: column-reverse;
 }

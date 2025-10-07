@@ -1,5 +1,4 @@
 
-
 .outro {
   text-align: center;
   max-width: 750px;
@@ -22,6 +21,7 @@
 
     margin-bottom: 30px;
   }
+
   overflow: hidden;
 
   .bg {
@@ -32,6 +32,7 @@
     right: 0;
     //transform: translate(50%, 50%);
     z-index: -1;
+
     svg {
       scale: 1.2;
       height: 950px;

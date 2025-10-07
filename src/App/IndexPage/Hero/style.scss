@@ -2,6 +2,7 @@
   canvas {
     z-index: -1;
   }
+
   position: relative;
   height: 100dvh;
   overflow: hidden;
@@ -42,6 +43,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.3rem;
+
     * {
       z-index: 1;
     }
@@ -81,6 +83,7 @@
       }
     }
   }
+
   .hero__cta {
     //position: absolute;
     //bottom: 0;

@@ -4,7 +4,7 @@ import Button from "@/App/components/Button/Button";
 import {TypeAnimation} from 'react-type-animation';
 import LiquidEther from "./Bg";
 
-import { useNavigate } from '@tanstack/react-router'
+import {useNavigate} from '@tanstack/react-router'
 
 const sequence: (string | number)[] = [
     'Full-stack', 2500, 'Python', 2500, 'Scraping', 2500, 'Automation', 2500
@@ -24,9 +24,9 @@ export default function Hero(): React.JSX.Element {
     const navigate = useNavigate()
 
     return <section id='hero' className='hero container'>
-        <div style={{ width: '100%', height: '100dvh', position: 'absolute'}}>
+        <div style={{width: '100%', height: '100dvh', position: 'absolute'}}>
             <LiquidEther
-                colors={[ '#4a11ff', '#e0bde0', '#B19EEF' ]}
+                colors={['#4a11ff', '#e0bde0', '#B19EEF']}
                 mouseForce={20}
                 cursorSize={100}
                 isViscous={false}
@@ -43,7 +43,7 @@ export default function Hero(): React.JSX.Element {
                 autoRampDuration={0.6}
             />
         </div>
-        <div className='hero__content container' >
+        <div className='hero__content container'>
             <hgroup>
                 <p>
                     Dynamic Web Magic with Python and JavaScript
@@ -53,7 +53,7 @@ export default function Hero(): React.JSX.Element {
                 </h1>
             </hgroup>
             <p>Hi! I’m Oleksii Naidiuk, a <TypeComponent/> Developer based in Ukraine.</p>
-            <Button text='Contact me' onClick={() => navigate({to: '/contacts'}) }/>
+            <Button text='Contact me' onClick={() => navigate({to: '/contacts'})}/>
         </div>
     </section>
 }

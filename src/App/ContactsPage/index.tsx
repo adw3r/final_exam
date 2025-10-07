@@ -1,6 +1,6 @@
 import './style.scss'
 import Layout from "@/App/components/Layout";
-import Button from "@/App/components/Button/Button";
+import ContactForm from "@/App/components/ContactForm";
 
 
 export default function ContactsPage() {
@@ -9,25 +9,7 @@ export default function ContactsPage() {
             <main className="contact-page container">
                 <h1>Reach me out</h1>
                 <p className="subtitle">Have a question or want to work together? Drop a message.</p>
-                <form action="/contacts" method={'POST'} className="contact-form" noValidate>
-                    <div className="row">
-                        <div className="field">
-                            <label htmlFor="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" autoComplete="name" required/>
-                        </div>
-                        <div className="field">
-                            <label htmlFor="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="you@example.com" autoComplete="email" required/>
-                        </div>
-                    </div>
-                    <div className="field">
-                        <label htmlFor="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Tell me about your project or question..." rows={6} required/>
-                    </div>
-                    <div className="actions">
-                        <Button text="Send message" className="center" />
-                    </div>
-                </form>
+                <ContactForm/>
             </main>
         </Layout>
     )

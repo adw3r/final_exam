@@ -27,6 +27,7 @@ $phase-color: #CBACF9;
     min-height: 400px;
   }
   perspective: 1200px;
+
   &:hover {
     //scale: 1
   }
@@ -41,6 +42,7 @@ $phase-color: #CBACF9;
     border: $card-border;
     background: $card-bg;
     cursor: pointer;
+
     &:focus-visible {
       outline: 2px solid rgba(129, 140, 248, 0.8);
       outline-offset: 3px;
@@ -83,6 +85,7 @@ $phase-color: #CBACF9;
 
   .front {
     align-items: center;
+
     .phase {
       font-size: 1.875rem;
       padding: 18px 25px;

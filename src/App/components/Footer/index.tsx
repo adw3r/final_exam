@@ -10,7 +10,7 @@ interface IconInterface {
 
 function Icon({href, svg_path}: IconInterface) {
     return <a href={href} target="_blank" rel="noreferrer" className={'social_icon'}>
-        <svg className={'icon'} >
+        <svg className={'icon'}>
             <use xlinkHref={svg_path}></use>
         </svg>
     </a>

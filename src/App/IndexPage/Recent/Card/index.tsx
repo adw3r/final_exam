@@ -11,7 +11,7 @@ interface CardProps {
     icons: string[]
 }
 
-const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <article >
+const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <article>
     <a href={url} className={'card'} title={title}>
         <div className={'card__content'}>
             <div className="card__img" style={{backgroundImage: `url(${card_bg})`}}>
