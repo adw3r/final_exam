@@ -56,6 +56,9 @@
       @media (max-width: 768px) {
         height: 60px;
       }
+      @media (max-width: 500px) {
+        font-size: 1rem;
+      }
     }
 
     hgroup {
@@ -77,5 +80,16 @@
         text-transform: uppercase;
       }
     }
+  }
+  .hero__cta {
+    //position: absolute;
+    //bottom: 0;
+    //left: 0;
+    //right: 0;
+    //padding: 20px 0;
+    //display: flex;
+    //justify-content: center;
+    //gap: 10px;
+    width: 100%;
   }
 }

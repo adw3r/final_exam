@@ -32,6 +32,10 @@
     transform: rotate(15deg);
     left: 25%;
   }
+  @media (max-width: 768px) {
+    //transform: rotate(-15deg);
+    left: 20%;
+  }
 }
 
 .marquee {
@@ -105,7 +109,7 @@ $scroll_time: 500s;
     left: 40%;
   }
   @media (max-width: 768px) {
-    transform: rotate(-20deg);
+    transform: rotate(0deg);
     left: 50%;
   }
 }
@@ -119,7 +123,7 @@ $scroll_time: 500s;
     //height: 110px;
   }
   @media (max-width: 768px) {
-    width: 70px;
+    width: 150px;
   }
 }
 

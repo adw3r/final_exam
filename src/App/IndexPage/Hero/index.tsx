@@ -4,6 +4,8 @@ import Button from "@/App/components/Button/Button";
 import {TypeAnimation} from 'react-type-animation';
 import LiquidEther from "./Bg";
 
+import { useNavigate } from '@tanstack/react-router'
+
 const sequence: (string | number)[] = [
     'Full-stack', 2500, 'Python', 2500, 'Scraping', 2500, 'Automation', 2500
 ];
@@ -19,6 +21,8 @@ const TypeComponent: React.FC = () => {
     );
 };
 export default function Hero(): React.JSX.Element {
+    const navigate = useNavigate()
+
     return <section id='hero' className='hero container'>
         <div style={{ width: '100%', height: '100dvh', position: 'absolute'}}>
             <LiquidEther
@@ -49,7 +53,7 @@ export default function Hero(): React.JSX.Element {
                 </h1>
             </hgroup>
             <p>Hi! I’m Oleksii Naidiuk, a <TypeComponent/> Developer based in Ukraine.</p>
-            <a href="/contacts" className='hero__cta'><Button text='Contact me'/></a>
+            <Button text='Contact me' onClick={() => navigate({to: '/contacts'}) }/>
         </div>
     </section>
 }

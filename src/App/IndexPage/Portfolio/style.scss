@@ -1,9 +1,6 @@
 $portfolio_grid_cols: 5;
 $portfolio_grid_rows: 2;
-
-.rows-2 {
-  grid-template-rows: repeat(2, 1fr);
-}
+@media (max-width: 900px) {}
 
 hgroup {
   display: flex;
@@ -23,7 +20,7 @@ hgroup {
     grid-template-rows: repeat($portfolio_grid_rows, 1fr);
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
-      grid-template-rows: unset;
+      grid-template-rows: repeat(3,250px);
     }
     gap: 1rem;
   }

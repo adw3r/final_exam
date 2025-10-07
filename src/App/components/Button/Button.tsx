@@ -1,13 +1,14 @@
 import './style.scss'
-import React from 'react'
+import React, {MouseEventHandler} from 'react'
 
 type ButtonProps = {
     text: string
     className?: string
+    onClick?: MouseEventHandler<HTMLButtonElement> | undefined
 }
 
 export default function Button(props: ButtonProps): React.JSX.Element {
-    return <button className={'btn ' + (props.className ?? '')}>
+    return <button className={'btn ' + (props.className ?? '')} onClick={props.onClick}>
         {props.text}
         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" >
             <path

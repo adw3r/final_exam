@@ -69,9 +69,9 @@ h1 {
   color: #FFF;
   text-align: center;
   font-size: 4.5rem;
-  //@media (max-width: 768px) {
-  //  font-size: 4rem;
-  //}
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 4.5rem */
