@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: adw3r-tech-site:latest
+    ports:
+      - "443:443"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+
