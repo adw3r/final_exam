@@ -5,7 +5,7 @@ import {TypeAnimation} from 'react-type-animation';
 import LiquidEther from "./Bg";
 
 const sequence: (string | number)[] = [
-    'Full-stack', 1500, 'Python', 1500, 'Scraping', 1500, 'Automation', 1500
+    'Full-stack', 2500, 'Python', 2500, 'Scraping', 2500, 'Automation', 2500
 ];
 const TypeComponent: React.FC = () => {
     return (
@@ -48,12 +48,8 @@ export default function Hero(): React.JSX.Element {
                     Transforming Concepts into Seamless <span className='pink'>User Experiences</span>
                 </h1>
             </hgroup>
-            <p>
-                Hi! I’m Oleksii Naidiuk, a <TypeComponent/> Developer based in Ukraine.
-            </p>
-            <a href="#portfolio" className='hero__cta'>
-                <Button text='Contact me'/>
-            </a>
+            <p>Hi! I’m Oleksii Naidiuk, a <TypeComponent/> Developer based in Ukraine.</p>
+            <a href="/contacts" className='hero__cta'><Button text='Contact me'/></a>
         </div>
     </section>
 }

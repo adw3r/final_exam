@@ -10,8 +10,3 @@
   /* Offset for fixed header so target isn't hidden */
   scroll-margin-top: 120px;
 }
-
-/* Ensure the hero fills the viewport for a proper snap */
-section.hero {
-  min-height: 100dvh;
-}
