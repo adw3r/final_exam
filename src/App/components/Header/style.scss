@@ -12,33 +12,63 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  position: sticky;
+  position: fixed;
   padding-top: 1rem;
-  @media (max-width: 500px) {
+  margin-top: 1rem;
+  @media (max-width: 768px) {
+    position: sticky;
     padding-top: 0;
+    margin-top: 0;
   }
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  margin-top: 1rem;
 
 
   nav {
     width: 550px;
-
     border-radius: 13px;
+    @media (max-width: 768px) {
+      width: 100%;
+      border-radius: 0;
+    }
+
     border: 1px solid rgba(105, 113, 162, 0.16);
     background: linear-gradient(103deg, #04071D 16.66%, #0C0E23 81.61%);
-    padding: 1rem 1.5rem;
+    padding: 1rem;
+
+    .burger {
+      display: none;
+      top: 5px;
+      left: 0;
+      position: relative;
+      background: transparent;
+      border: none;
+      color: inherit;
+      svg { fill: currentColor; }
+
+      @media (max-width: 375px) {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
 
     ul {
       list-style: none;
       display: flex;
       flex-direction: row;
-      //gap: 2rem;
       justify-content: space-between;
+      @media (max-width: 768px) {
+        justify-content: space-around;
+      }
+      @media (max-width: 500px) {
+        justify-content: space-between;
+      }
+      @media (max-width: 375px) {
+        display: none;
+      }
 
       li {
         :hover {
@@ -50,4 +80,31 @@ header {
 }
 
 @media screen and (max-width: 500px) {
+}
+
+.nav-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+
+  &.open { display: flex; }
+
+  .modal-panel {
+    width: min(90%, 360px);
+    border-radius: 13px;
+    border: 1px solid rgba(105, 113, 162, 0.16);
+    background: linear-gradient(103deg, #04071D 16.66%, #0C0E23 81.61%);
+    padding: 1rem 1.5rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      li { text-align: center; }
+    }
+  }
 }
