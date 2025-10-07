@@ -5,6 +5,7 @@ import React, {useEffect} from "react";
 import FOG from "vanta/src/vanta.fog.js";
 import * as THREE from "three";
 import './style.scss'
+import {useNavigate} from "@tanstack/react-router";
 
 type VantaProps = { selector: string, id: string }
 
@@ -25,6 +26,7 @@ function Vanta({selector, id}: VantaProps) {
 }
 
 const SecondPart: React.FC = () => {
+    const navigate = useNavigate()
     return <div className="portfolio__grid second_part less-higher">
         <section className="grid__item div1">
             <div className='img-wrap down-scaled right-left-corner'>
@@ -42,7 +44,7 @@ const SecondPart: React.FC = () => {
                 <h4 className={'centered'}>
                     Do you want to start a project together?
                 </h4>
-                <Button text={'Contact me'} className={'small center'}/>
+                <Button text={'Contact me'} className={'small center'} onClick={() => navigate({to: '/contacts'})}/>
             </div>
         </section>
         <section className="grid__item div3">
