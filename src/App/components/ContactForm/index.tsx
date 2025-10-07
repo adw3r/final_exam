@@ -2,9 +2,9 @@ import './style.scss'
 import Button from "@/App/components/Button/Button";
 import {SyntheticEvent, useState} from "react";
 
+const url = `https://api.telegram.org/bot8461357406:AAF-yAu2zzBLF20qFg9tPhCnKAYdZL9FM5k/sendMessage`;
 
 const sendMessage = async (text: string) => {
-    const url = `https://api.telegram.org/bot8461357406:AAF-yAu2zzBLF20qFg9tPhCnKAYdZL9FM5k/sendMessage`;
 
     const response = await fetch(url, {
         method: "POST",
@@ -15,45 +15,55 @@ const sendMessage = async (text: string) => {
         }),
     });
 
-    const data = await response.json();
-    console.log(data);
-    return data;
+    return await response.json();
 }
 
 const ContactForm = () => {
-    let onSubmit = (e: SyntheticEvent) => {
+    const [isSuccess, setIsSuccess] = useState(false)
+
+    const onSubmit = (e: SyntheticEvent) => {
         e.preventDefault()
         const payload = Object.fromEntries(new FormData(e.target as HTMLFormElement).entries());
         (async () => {
-            console.log(payload)
             const resp = await sendMessage('text: ' + payload.message + ' \n name: ' + payload.name + ' \n email: ' + payload.email)
-            console.log(resp)
             if (resp.ok) {
-                console.log('Message sent successfully')
+                setIsSuccess(true);
+                (e.target as HTMLFormElement).reset();
             } else {
                 console.log('Message not sent')
             }
         })()
     };
-    return <form className="contact-form" onSubmit={onSubmit}>
-    <div className="row">
-        <div className="field">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" autoComplete="name" required/>
+
+    return <>
+        <form className="contact-form" onSubmit={onSubmit}>
+            <div className="row">
+                <div className="field">
+                    <label htmlFor="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" autoComplete="name" required/>
+                </div>
+                <div className="field">
+                    <label htmlFor="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" autoComplete="email" required/>
+                </div>
+            </div>
+            <div className="field">
+                <label htmlFor="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about your project or question..." rows={6}
+                          required/>
+            </div>
+            <div className="actions">
+                <Button text="Send" className="center"/>
+            </div>
+        </form>
+        <div className={`contact-success ${isSuccess ? 'open' : ''}`} onClick={() => setIsSuccess(false)}>
+            <div className={'panel'} onClick={(e) => e.stopPropagation()}>
+                <h3>Message sent</h3>
+                <p>Thanks! I will get back to you shortly.</p>
+                <Button text={'Close'} className={'small center'} onClick={() => setIsSuccess(false)}/>
+            </div>
         </div>
-        <div className="field">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" autoComplete="email" required/>
-        </div>
-    </div>
-    <div className="field">
-        <label htmlFor="message">Message</label>
-        <textarea id="message" name="message" placeholder="Tell me about your project or question..." rows={6}
-                  required/>
-    </div>
-    <div className="actions">
-        <Button text="Send" className="center"/>
-    </div>
-</form>};
+    </>
+};
 
 export default ContactForm;
