@@ -14,6 +14,7 @@ services:
       - NODE_ENV=production
 
   api:
+    restart: unless-stopped
     container_name: api
     build: ./api
     image: adw3r-tech-api:latest
