@@ -58,6 +58,9 @@
       @media (max-width: 1024px) {
         top: 0;
       }
+      @media (max-width: 900px) {
+        top: -40px;
+      }
 
       right: -10px;
     }
@@ -73,6 +76,9 @@
       top: 20px;
       @media (max-width: 1024px) {
         top: 0;
+      }
+      @media (max-width: 900px) {
+        top: -60px;
       }
       left: -10px;
     }

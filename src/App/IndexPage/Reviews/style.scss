@@ -8,14 +8,23 @@
 
   .technologies {
     display: flex;
+    gap: 20px;
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
     flex-direction: row;
     justify-content: space-between;
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
 
     li {
       .img-wrap {
         img {
-          width: 210.69px;
-          height: 38.388px;
+          //width: 210.69px;
+          //height: 38.388px;
           flex-shrink: 0;
         }
       }
