@@ -1,9 +1,4 @@
 .contact-page {
-  //padding: 200px 0 120px;
-  //@media (max-width: 900px) {
-  //  padding: 10px 0 60px;
-  //}
-  //flex-grow: 1;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
@@ -11,7 +6,6 @@
   align-items: center;
   @media (max-width: 768px) {
     margin-top: -50px;
-    //margin-bottom: 20px;
   }
 
   h1 {
