@@ -1,6 +1,9 @@
 
 blockquote {
   padding: 50px;
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,6 +12,9 @@ blockquote {
   border: 1px solid rgba(54, 55, 73, 0.43);
   background: linear-gradient(103deg, #04071D 16.66%, #0C0E23 81.61%);
   min-height: 300px;
+  @media (max-width: 768px) {
+    min-height: 200px;
+  }
 }
 
 
