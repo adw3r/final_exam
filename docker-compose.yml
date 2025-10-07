@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     image: adw3r-tech-site:latest
     ports:
-      - "9999:443"
+      - "8000:443"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
