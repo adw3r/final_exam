@@ -71,3 +71,6 @@ hgroup {
     }
   }
 }
+.item__content.inverted {
+  flex-direction: column-reverse;
+}
