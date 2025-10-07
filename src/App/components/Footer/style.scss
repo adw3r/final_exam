@@ -5,6 +5,11 @@
   display: flex;
   justify-content: space-between;
   max-width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  //top: 0;
   .copyright {
     color: #FFF;
     font-family: inherit;

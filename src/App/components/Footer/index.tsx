@@ -6,7 +6,7 @@ import React from 'react'
 interface IconInterface {
     href: string,
     svg_path: string
-};
+}
 
 function Icon({href, svg_path}: IconInterface) {
     return <a href={href} target="_blank" rel="noreferrer" className={'social_icon'}>

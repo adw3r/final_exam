@@ -58,6 +58,10 @@ body {
 .page-wrapper main {
   flex-grow: 1;
 }
+#root {
+  position: relative;
+
+}
 button {
   cursor: pointer;
   border: none;
