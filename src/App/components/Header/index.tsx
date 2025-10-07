@@ -11,6 +11,19 @@ export default function Header() {
         <>
             <header>
                 <nav>
+                    <a className={'brand'} href={'/'} aria-label={'Home'}>
+                        <img src={'/favicon-32x32.png'} alt="Adw3r.tech logo"/>
+
+                        <span>Adw3r.tech</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="/#recent">Recent</a></li>
+                        <li><a href="/#reviews">Reviews</a></li>
+                        <li><a href="/#experience">Experience</a></li>
+                        <li><a href="/#approach">Approach</a></li>
+                        <li><a href="/contacts">Contacts</a></li>
+                    </ul>
                     <button
                         className={'burger'}
                         aria-label={open ? 'Close menu' : 'Open menu'}
@@ -23,14 +36,8 @@ export default function Header() {
                             <rect x="3" y="11" width="18" height="2" rx="1"/>
                             <rect x="3" y="16" width="18" height="2" rx="1"/>
                         </svg>
+
                     </button>
-                    <ul>
-                        <li><a href="/#recent">Recent</a></li>
-                        <li><a href="/#reviews">Reviews</a></li>
-                        <li><a href="/#experience">Experience</a></li>
-                        <li><a href="/#approach">Approach</a></li>
-                        <li><a href="/contacts">Contacts</a></li>
-                    </ul>
                 </nav>
             </header>
 
