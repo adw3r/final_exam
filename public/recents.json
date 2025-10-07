@@ -2,7 +2,7 @@
   {
     "title": "Personal budget app",
     "body": "Integration of MonoBank API and Google`s spreadsheets in one app using FastAPI + HTMX stack",
-    "url": "https://adw3r.tech/",
+    "url": "http://pythonserver.com:9999/",
     "icons": ["python", "docker", "react", "typescript"],
     "img": "/img.png"
   },

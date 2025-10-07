@@ -40,6 +40,9 @@ const Card = ({title, body, url, img, icons}: CardProps): ReactElement => <artic
                     );
                 })}
             </ul>
+            <span style={{textDecoration: 'underline'}} className={'click-me'}>
+                Click me
+            </span>
         </div>
     </a>
 </article>;

@@ -6,6 +6,12 @@
   @media (max-width: 320px) {
     min-height: 450px!important;
   }
+  .click-me {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
 }
 .card {
   padding: 36px 24px;
@@ -20,6 +26,9 @@
   &:hover {
     cursor: pointer;
     scale: 1.1;
+    @media (max-width: 768px) {
+      scale: 1;
+    }
 
     .card__img {
       .img-wrap {
