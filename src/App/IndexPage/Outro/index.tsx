@@ -19,7 +19,7 @@ export default function Outro() {
         <section className={'outro container'} id={'outro'}>
             <h2>Ready to take <span className='pink'>your</span> digital presence to the next level?</h2>
             <p>Reach out to me today and let's discuss how I can help you achieve your goals.</p>
-            <Button text='Contact Me Now'/>
+            <Button text='Contact Me'/>
             <div className='bg'>
                 {icon}
             </div>

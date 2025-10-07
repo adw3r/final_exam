@@ -15,7 +15,7 @@ $phase-color: #CBACF9;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     grid-template-columns: 1fr;
   }
 }
@@ -23,7 +23,7 @@ $phase-color: #CBACF9;
 .card {
   //min-width: 340px;
   min-height: 620px;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     min-height: 400px;
   }
   @media (max-width: 500px) {
