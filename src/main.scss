@@ -55,9 +55,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.page-wrapper main {
-  flex-grow: 1;
-}
 #root {
   position: relative;
 
@@ -88,15 +85,6 @@ h2 {
   margin-bottom: 50px;
 
   font-size: 3rem;
-  //@media (max-width: 1024px) {
-  //  font-size: 1.7rem;
-  //}
-  //@media (max-width: 768px) {
-  //  font-size: 1.5rem;
-  //}
-  //@media (max-width: 500px) {
-  //  font-size: 1.3rem;
-  //}
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 3rem */
@@ -106,15 +94,6 @@ h2 {
 h3 {
   color: #FFF;
   font-size: 1.875rem;
-  //@media (max-width: 1024px) {
-  //  font-size: 1.4rem;
-  //}
-  //@media (max-width: 768px) {
-  //  font-size: 1.2rem;
-  //}
-  //@media (max-width: 500px) {
-  //  font-size: 1rem;
-  //}
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 2.25rem */
@@ -122,17 +101,10 @@ h3 {
 }
 h4 {
   font-size: 1.35rem;
-  //@media (max-width: 1024px) {
-  //  font-size: 1.2rem;
-  //}
-  //@media (max-width: 768px) {
-  //  font-size: 1rem;
-  //}
-  //@media (max-width: 500px) {
-  //  font-size: .8rem;
-  //}
 }
 span.pink {
   color: #CBACF9;
   letter-spacing: -0.125rem;
 }
+
+

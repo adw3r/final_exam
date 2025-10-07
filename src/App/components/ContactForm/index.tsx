@@ -19,7 +19,7 @@ const ContactForm = () => <form action="/contacts" method={'POST'} className="co
                   required/>
     </div>
     <div className="actions">
-        <Button text="Send message" className="center"/>
+        <Button text="Send" className="center"/>
     </div>
 </form>;
 
