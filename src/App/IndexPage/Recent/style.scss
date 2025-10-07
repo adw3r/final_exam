@@ -1,5 +1,8 @@
 .recent {
   margin-bottom: 150px;
+  @media (max-width: 900px) {
+    margin-bottom: 100px;
+  }
 
   h2 {
     margin-bottom: 50px;
@@ -7,6 +10,7 @@
 
   .grid {
     display: grid;
+    margin-bottom: 0;
     grid-template-columns: 1fr 1fr;
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
