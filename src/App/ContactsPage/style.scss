@@ -1,12 +1,14 @@
 .contact-page {
   min-height: 100dvh;
+  padding: 75px 0;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media (max-width: 768px) {
-    margin-top: -50px;
-  }
+  //@media (max-width: 768px) {
+  //  margin-top: -50px;
+  //}
 
   h1 {
     margin-bottom: 20px;
