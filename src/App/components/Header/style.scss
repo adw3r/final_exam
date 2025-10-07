@@ -27,8 +27,12 @@ header {
 
 
   nav {
-    width: 550px;
+
     border-radius: 13px;
+    width: 60%;
+    @media (max-width: 1024px) {
+      width: 80%;
+    }
     @media (max-width: 768px) {
       width: 100%;
       border-radius: 0;
@@ -68,7 +72,7 @@ header {
       color: inherit;
       svg { fill: currentColor; }
 
-      @media (max-width: 450px) {
+      @media (max-width: 660px) {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -79,14 +83,15 @@ header {
       list-style: none;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      gap: 35px;
+      @media (max-width: 680px) {
+        gap: 15px;
+      }
+      //width: 600px;
       @media (max-width: 768px) {
         justify-content: space-around;
       }
-      @media (max-width: 500px) {
-        justify-content: space-between;
-      }
-      @media (max-width: 450px) {
+      @media (max-width: 660px) {
         display: none;
       }
 
@@ -97,9 +102,6 @@ header {
       }
     }
   }
-}
-
-@media screen and (max-width: 500px) {
 }
 
 .nav-modal {
