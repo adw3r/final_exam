@@ -22,7 +22,7 @@
 
     margin-bottom: 30px;
   }
-  //overflow: hidden;
+  overflow: hidden;
 
   .bg {
     position: absolute;
@@ -33,6 +33,7 @@
     //transform: translate(50%, 50%);
     z-index: -1;
     svg {
+      scale: 1.2;
       height: 950px;
       width: 100%;
     }
