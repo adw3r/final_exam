@@ -1,6 +1,8 @@
 version: "3.9"
 services:
   web:
+    depends_on:
+      - api
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,3 +13,9 @@ services:
     environment:
       - NODE_ENV=production
 
+  api:
+    container_name: api
+    build: ./api
+    image: adw3r-tech-api:latest
+    ports:
+      - "3000:3000"

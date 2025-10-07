@@ -2,7 +2,9 @@ import './style.scss'
 import Button from "@/App/components/Button/Button";
 import {SyntheticEvent, useState} from "react";
 
-const url = `https://api.telegram.org/bot8461357406:AAF-yAu2zzBLF20qFg9tPhCnKAYdZL9FM5k/sendMessage`;
+
+const API_ROUTE = 'localhost:3000';
+const url = `http://${API_ROUTE}/api/sendMessage`;
 
 const sendMessage = async (text: string) => {
 
@@ -10,8 +12,7 @@ const sendMessage = async (text: string) => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-            chat_id: '@adw3r_tech',
-            text: text
+            text: text,
         }),
     });
 
