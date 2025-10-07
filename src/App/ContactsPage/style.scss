@@ -1,5 +1,8 @@
 .contact-page {
   padding: 200px 0 120px;
+  @media (max-width: 900px) {
+    padding: 10px 0 60px;
+  }
   flex-grow: 1;
   min-height: 100dvh;
 

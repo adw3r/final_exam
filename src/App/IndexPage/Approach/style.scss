@@ -26,6 +26,9 @@ $phase-color: #CBACF9;
   @media (max-width: 768px) {
     min-height: 400px;
   }
+  @media (max-width: 500px) {
+    min-height: 600px;
+  }
   perspective: 1200px;
 
   &:hover {
