@@ -17,8 +17,7 @@ export default function Recent() {
     const [items, setItems] = useState<TItem[]>([]);
 
     useEffect(() => {
-        const resp = fetch(RECENTS_URL)
-        resp.then((res) => res.json())
+        fetch(RECENTS_URL).then((res) => res.json())
             .then((data) => setItems(data))
             .catch((err) => console.error("Failed to load projects:", err))
     }, [])

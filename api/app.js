@@ -18,10 +18,6 @@ app.post('/api/sendMessage', async (req, res) => {
     res.send(await response.json())
 })
 
-app.get('/api/health', (req, res) => {
-    res.send('ok')
-})
-
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })

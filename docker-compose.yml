@@ -19,4 +19,3 @@ services:
     image: adw3r-tech-api:latest
     ports:
       - "3000:3000"
-

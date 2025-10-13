@@ -16,7 +16,6 @@
     "gsap": "^3.13.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-slick": "^0.31.0",
     "react-type-animation": "^3.2.0",
     "sass": "^1.92.1",
     "slick-carousel": "^1.8.1",

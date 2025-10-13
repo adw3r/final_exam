@@ -20,14 +20,11 @@ function ListItem({title, body, image}: IListItem) {
     </li>;
 }
 
-const experienceUrl = '/experience.json';
-
 export default function Experience(): React.JSX.Element {
     const [items, setItems] = useState<IListItem[]>([]);
 
     useEffect(() => {
-        const resp = fetch(EXPERIENCE_URL)
-        resp.then((res) => res.json())
+            fetch(EXPERIENCE_URL).then((res) => res.json())
             .then((data) => setItems(data))
             .catch((err) => console.error("Failed to load projects:", err))
     }, [])
