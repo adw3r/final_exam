@@ -12,9 +12,7 @@ FROM nginx:1.27-alpine AS runtime
 WORKDIR /usr/share/nginx/html
 
 COPY ./nginx.web.conf /etc/nginx/conf.d/default.conf
-COPY ./ssl /etc/nginx/ssl
 COPY --from=build /app/dist ./
 
-EXPOSE 443
+EXPOSE 8000
 CMD ["nginx", "-g", "daemon off;"]
-
