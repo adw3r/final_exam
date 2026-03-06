@@ -14,5 +14,5 @@ WORKDIR /usr/share/nginx/html
 COPY ./nginx.web.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist ./
 
-EXPOSE 8000
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
